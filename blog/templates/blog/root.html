@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Blog API</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 0.5rem 0;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Mini Blog API!</h1>
+    </header>
+    <main>
+        <p>Available routes:</p>
+        <ul>
+            <li><a href="/api/posts/">Posts</a> - List and create posts</li>
+            <li><a href="/api/posts/&lt;id&gt;/">Post Detail</a> - Retrieve, update, or delete a post</li>
+            <li><a href="/api/posts/1/">Post Detail</a> - Retrieve, update, or delete a post (example for post ID 1)</li>
+            <li><a href="/api/posts/&lt;post_id&gt;/comments/">Comments</a> - List and create comments for a post</li>
+            <li><a href="/api/posts/1/comments/">Comments</a> - List and create comments for a post (example for post ID 1)</li>
+        </ul>
+        <p>Documentation: <a href="/api/docs/">API Documentation</a></p>
+    </main>
+</body>
+</html>
